@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*
+Valuable Cars
+Cascading Stlye Sheet
+Author: Jake Lionetti
+Date: 10/1/2019
+Filename: style.css
+*/
+html {
+  background-color: #DCDCDC;
+/*background-image:url('images/metal.jpg');*/
+}
+h1,h2{
+  text-align: center;
+  margin-left:100px;
+  margin-right:100px;
+  background-color:#555;
+  border: 5px outset rgb(153, 5, 0);
+
+}
+h3{
+  text-align: center;
+  margin-left:100px;
+  margin-right:100px;
+  background-color:#555;
+  border: 5px outset rgb(153, 5, 0);
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height:150px;
+}
+/*Table Styles*/
+table.inventory {
+  background: white;
+  border: 10px outset rgb(153, 5, 0);
+  font-size: 1.5em;
+  width: 100%;
+  padding: 50px;
+  margin-bottom: 150px;
+}
+table.inventory th, table.inventory td {
+  border: 1px solid grey;
+}
+
+table.inventory thead tr {
+  height: 100px;
+}
+
+table.inventory tbody tr {
+  height: 100px;
+}
+
+table.suv {
+  table {
+    background:gray;
+    width:400px;
+  }
+  table,td{
+    border: 1px solid#000;
+    border-collapse:collapse;
+  }
+}
+/* navigation bar styles */
+.navbar {
+border: 5px outset rgb(153, 5, 0);
+background-color: #555;
+overflow: auto;
+
+}
+
+/* Navbar links */
+.navbar a {
+border: 5px outset rgb(211, 211, 255);
+ float: left;
+ text-align: center;
+ padding:15px;
+ color: white;
+ text-decoration: none;
+ font-size: 25px;
+ font-family:grunge, Helvetica, sans-serif;
+
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+ background-color: #B22222;
+}
+nav a {
+
+font-family:grunge, Helvetica, sans-serif;
+
+color:white;
+}
+
+nav a:link, nav:visited{
+color:white;
+text-decoration:none;
+background-color: #8B0000;
+
+}
+
+nav a:hover,nav a:active{
+color:  #555;
+backround-color:white;
+}
+
+/* Current/active navbar link */
+.active {
+ background-color: #8B0000;
+}
+footer {
+text-align: center;
+background-color: #555;
+border: 5px outset rgb(153, 5, 0);
+color: white;
+font-size: 1.5em;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }  
